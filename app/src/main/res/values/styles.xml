@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="TitleText">
+        <item name="android:layout_marginStart">@dimen/dimen_16</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_8</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SmallText">
+        <item name="android:layout_marginStart">@dimen/dimen_16</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:layout_marginTop">@dimen/dimen_16</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_4</item>
+    </style>
+
+</resources>

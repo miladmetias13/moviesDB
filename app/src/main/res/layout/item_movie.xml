@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/movie_background"
+    android:layout_marginBottom="@dimen/dimen_1"
+    tools:ignore="UnusedAttribute">
+
+
+
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_margin="8sp"
+        android:layout_width="82sp"
+        android:layout_height="82sp"
+        android:transitionName="photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        app:layout_constraintEnd_toStartOf="@id/movie_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:singleLine="false"
+        android:layout_margin="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/movie_image"
+        app:layout_constraintTop_toBottomOf="@id/movie_title"
+        tools:text="Long text to demonstrate problem with TextView in GridLayout taking up too much space despite ellipsisLong text to demonstrate problem with TextView in GridLayout taking up too much space despite ellipsisLong text to demonstrate problem with TextView in GridLayout taking up too much space despite ellipsisLong text to demonstrate problem with TextView in GridLayout taking up too much space despite ellipsis" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
